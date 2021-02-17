@@ -1,0 +1,316 @@
+:root {
+    --text-size: 1.7rem;
+    --text-color: #495159;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3 ease;
+}
+
+header {
+    width: 100%;
+    height: 230px;
+}
+
+.Steffanylogo {
+    position: absolute;
+    width: 100%;
+    top: 20px;
+}
+
+.logo-container {
+    position: relative;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav {
+    width: 100%;
+    height: 50px;
+}
+
+.nav-container {
+    width: fit-content;
+    margin-top: 1.4rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.nav-items {
+    text-decoration: none;
+    font-size: var(--text-size);
+    margin: 3rem;
+    color: var(--text-color);
+    font-family: 'Baloo 2', cursive;
+
+}
+
+.nav-items:hover {
+    color: #9d8189;
+}
+
+
+.login-btn:hover {
+    text-decoration: underline;
+}
+.login-btn {
+    padding-left: 1rem;
+    color: #9d8189;
+}
+ 
+
+main {
+    height: 2000px;
+}
+.slider-background {
+    background-image: url('../img/fond-rose.jpeg');
+    background-repeat: repeat;
+}
+.slider {
+    width: 1000px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+
+.slides {
+    width: 3000px;
+    height: 500px;
+    animation: slide 25s infinite;
+
+}
+.slide { 
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.picture-slider {
+    width: 1000px;
+    height: 500px;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0px);
+    }
+    7% {
+        transform: translateX(0px);
+    }
+    33% {
+        transform: translateX(-1000px);
+    }
+    40% {
+        transform: translateX(-1000px);
+
+    }
+    66% {
+        transform: translateX(-2000px);
+
+    }
+    73% {
+        transform: translateX(-2000px);
+
+    }
+    100% {
+        transform: translateX(-1000px);
+    }
+
+    107% {
+        transform: translateX(-1000px);
+    }
+
+    
+}
+
+.aboutme-section h4, .video-section h4, .dernier-ajout h4 {
+    font-size: 3rem;
+    color: var(--text-color);
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Baloo 2', sans-serif;
+}
+
+.aboutme-section  {
+    font-size: var(--text-size);
+    width: 800px;
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.aboutme-section p {
+    line-height: 2.7rem; 
+    margin-top: 40px;
+    font-family: 'Baloo 2', cursive;
+
+}
+
+.phrase-accroche p{
+    font-family: 'Baloo 2', cursive;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 100px;
+    color: var(--text-color);
+}
+
+.dernier-ajout {
+    width: 100%;
+    height: fit-content;
+    display : grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 30% auto;
+    margin-top: 150px;
+    position: relative;
+}
+
+
+.dernier-ajout h4 {
+    width: fit-content;
+    height: fit-content;
+    font-size: 3rem;
+    color: var(--text-color);
+    grid-column: 2;
+    justify-self: center;
+}
+
+
+.slides-vert img {
+    width: 350px;
+    height: 450px;
+}
+
+
+.card-link p {
+    font-size: var(--text-size);
+    width: 350px;
+
+}
+.card-link {
+    text-decoration: none;
+    color: var(--text-color);
+    position: relative;
+    justify-self: center;
+    align-self: center;
+    grid-row: 2;
+    overflow: hidden;
+}
+
+.slides-vert {
+    height: calc(450px*4);
+    width: 350px;
+    animation: slide-verticale 25s infinite;
+    overflow: hidden;
+}
+
+.slider-vert {
+    width: 350px;
+    height: 450px;
+    overflow: hidden;
+}
+
+@keyframes slide-verticale {
+    0% {
+        transform: translateY(0px);
+    }
+
+    10% {
+        transform: translateY(-450px);
+    }
+
+    25% {
+        transform: translateY(-450px);
+    }
+
+    35% {
+        transform: translateY(-900px);
+    }
+
+    50% {
+        transform: translateY(-900px);
+    }
+
+    60% {
+        transform: translateY(-1350px);
+    }
+
+
+    75% {
+        transform: translateY(-1350px);
+    }
+
+}
+.video-section {
+    display: grid;
+    grid-template-rows: 1fr;
+    margin-top: 100px;
+}
+
+.video-rea {
+
+    margin-top: 100px;
+    justify-self: center;
+}
+footer {
+    background-image: url("../img/fond-rose.jpeg");
+    width: 100%;
+    height: 200px;
+}
+
+footer p {
+    font-size: 1.3rem;
+    text-align: center;
+    margin-top: 500px;
+    padding-top: 90px;
+}
+
+
+.login-page {
+    background-image: url("../img/fond-rose.jpeg");
+}
+
+.login-section {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 280px;
+}
+
+.input {
+    margin-bottom: 10px;
+    outline: none;
+    border-radius: 4px;
+    border: 1px solid grey;
+}
+
+.btn {
+    width: 100px;
+    height: 20px;
+    background-color: #9d8189;
+    color: white;
+    border: none;
+}
+
+.rememberme {
+    display: flex;
+}
+
+.rememberme p{
+    font-size: 1.3rem;
+    font-family: sans-serif;
+    margin-left: 1rem;
+}
+.btn:hover {
+    background-color:rgba(0,0,0,.5) ;
+    cursor: pointer;
+}
